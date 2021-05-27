@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PSA_Furikae": {
+      "commandName": "Project",
+      "commandLineArgs": ".\\data2.txt"
+    }
+  }
+}

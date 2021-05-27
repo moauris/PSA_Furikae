@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSA_Furikae", "PSA_Furikae\PSA_Furikae.csproj", "{B509E330-881B-4536-B0ED-ED4CDB83900C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSA_FurikaeTests", "PSA_FurikaeTests\PSA_FurikaeTests.csproj", "{5DD9C55B-70E0-4E88-BEBF-F3A5049ABAC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B509E330-881B-4536-B0ED-ED4CDB83900C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B509E330-881B-4536-B0ED-ED4CDB83900C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B509E330-881B-4536-B0ED-ED4CDB83900C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B509E330-881B-4536-B0ED-ED4CDB83900C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD9C55B-70E0-4E88-BEBF-F3A5049ABAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD9C55B-70E0-4E88-BEBF-F3A5049ABAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD9C55B-70E0-4E88-BEBF-F3A5049ABAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD9C55B-70E0-4E88-BEBF-F3A5049ABAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2A9FEE3-C933-4F70-B086-A17A1A011825}
+	EndGlobalSection
+EndGlobal
