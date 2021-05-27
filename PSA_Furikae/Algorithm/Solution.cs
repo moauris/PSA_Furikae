@@ -41,7 +41,7 @@ namespace PSA_Furikae.Algorithm
             for (int i = 0; i < row; i++)
             {
                 result[i] = new double[col];
-                double acc = 0;
+                double acc = 0; // 滚动积累
                 int last_acc_index = -1; //上一次超界位置
                 for (int j = 0; j < col; j++)
                 {
@@ -51,6 +51,8 @@ namespace PSA_Furikae.Algorithm
                     {
                         // 普通月单月超过振替界限，将累计直接输出到结果。
                         result[i][j] = acc;
+                        //TODO: 讨论在12月份未满时，是否可以返回普通月超界振替？
+                        last_acc_index = j;
                         acc = 0;
                     }
                     else if ((j == 2 || j == 5 || j == 8) && acc >= furikae_Threshold)
@@ -62,7 +64,7 @@ namespace PSA_Furikae.Algorithm
                     }
                     else if (j == 11)
                     {
-                        // 如果12月未满，那么寻找上一次acc位置，替换
+                        // 如果12月未满，那么寻找上一次acc超界时的位置，替换
                         if (acc > 0)
                         {
                             if (acc < furikae_Threshold && last_acc_index > -1)
